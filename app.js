@@ -10,6 +10,7 @@ const sword_div = document.getElementById("sword");
 
 main();
 
+
 function getComputerChoice() {
   const choices = ["stone", "sword", "scroll"];
   const randomNumber = Math.floor(Math.random() * 3);
@@ -69,4 +70,5 @@ function main() {
   scroll_div.addEventListener("click", function () {
     game("scroll");
   });
+  
 }
