@@ -19,31 +19,29 @@ function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = compScore;
-  const smallUserWord = "(user)".fontsize(3).sub();
-  const smallCompWord = "(comp)".fontsize(3).sub();
-  result_p.innerHTML = `${userChoice}${smallUserWord} beats ${computerChoice}${smallCompWord} YOU WIN! `;
+
+  result_p.innerHTML = `${userChoice} beats ${computerChoice},YOU WIN! `;
 }
 function lose(userChoice, computerChoice) {
   compScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = compScore;
-  const smallUserWord = "(user)".fontsize(3).sub();
-  const smallCompWord = "(comp)".fontsize(3).sub();
-  result_p.innerHTML = `${computerChoice}${smallCompWord} beats ${userChoice}${smallUserWord} YOU LOSE! `;
+
+  result_p.innerHTML = `${computerChoice} beats ${userChoice},YOU LOSE! `;
 }
 function draw(userChoice, computerChoice) {
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = compScore;
-  const smallUserWord = "(user)".fontsize(3).sub();
-  const smallCompWord = "(comp)".fontsize(3).sub();
-  result_p.innerHTML = `${userChoice}${smallUserWord} equals ${computerChoice}${smallCompWord} DRAW! `;
+
+  result_p.innerHTML = `${userChoice} equals ${computerChoice},IT'S A DRAW! `;
 }
+
 function game(userChoice) {
   const computerChoice = getComputerChoice();
   switch (userChoice + computerChoice) {
     case "stonesword":
     case "scrollstone":
-    case "swordscroll ":
+    case "swordscroll":
       win(userChoice, computerChoice);
       break;
     case "stonescroll":
