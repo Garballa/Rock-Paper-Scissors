@@ -10,6 +10,9 @@ header {
   text-align: center;
   padding: 20px;
 }
+.header-p {
+  margin-top: 10px;
+}
 body {
   background-image: url("images/4.png");
   background-repeat: no-repeat;
@@ -88,4 +91,10 @@ body {
   padding: 20px;
   text-align: center;
   color: black;
+}
+.footer-div {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  font-weight: bold;
 }
