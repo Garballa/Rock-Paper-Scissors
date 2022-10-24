@@ -56,6 +56,7 @@ body {
   padding: 20px;
 }
 .choices {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -63,6 +64,24 @@ body {
   flex-wrap: wrap;
 }
 .choice {
+  margin: 0 20px;
+  padding: 10px;
   flex: 1 1 auto;
   text-align: center;
+  transition: all 0.3s ease;
+}
+#rock-dic {
+  display: none;
+}
+img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+#action-message {
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
 }
